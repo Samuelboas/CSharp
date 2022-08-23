@@ -61,5 +61,54 @@ switch (farve)
 }
 
 Console.WriteLine("You are an imposter");
-Console.WriteLine("you see pink infront of you what do you do kill or walk by?");
+
+Console.WriteLine("you see pink infront of you what do you do kill or walk");
+
+String killPink = Console.ReadLine();
+
+
+
+if (killPink == "kill") 
+{
+  Console.WriteLine("black orange saw you kill and you got ejected and lost");
+  Thread.Sleep(5000);
+  Environment.Exit(0);
+}
+else if (killPink == "walk")
+{
+  Console.WriteLine("you walked by pink and luckly for you pink ended up trusting you");
+  Thread.Sleep(3000);
+
+}
+else
+{
+  Console.WriteLine("you had to write (kill) or (walk)");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+}
+
+Console.WriteLine("Orange pressed the button and was sus of pink");
+Thread.Sleep(3000);
+Console.WriteLine("what do you do (agree) with Orange (help) Pink or (turn) on Orange");
+
+String meeting = Console.ReadLine();
+switch(meeting)
+{
+  case "agree":
+    Console.WriteLine("you voted pink out and lost the only one who trusted you and lost");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+  break;
+  case "help":
+    Console.WriteLine("you ended up keeping pink alive");
+    Thread.Sleep(5000);
+  break;
+  case "turn":
+    Console.WriteLine("you tried voting orange out but they ended op voting you out");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+  break;
+
+}
+
 string answer = Console.ReadLine();
