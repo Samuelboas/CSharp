@@ -1,10 +1,9 @@
 ﻿//Change appearance of Console
 Console.Title = "Among us";
-Console.ForegroundColor = ConsoleColor.DarkMagenta;
 Console.WindowHeight = 40;
 
 //Presentation
-Console.WriteLine("Hello welcome to among us");
+Console.WriteLine("Hello welcome to among us  ");
 Console.WriteLine("Do you want to start");
 
 string startGame = Console.ReadLine();
@@ -70,7 +69,7 @@ String killPink = Console.ReadLine();
 
 if (killPink == "kill") 
 {
-  Console.WriteLine("black orange saw you kill and you got ejected and lost");
+  Console.WriteLine("orange saw you kill and you got ejected and lost");
   Thread.Sleep(5000);
   Environment.Exit(0);
 }
@@ -110,5 +109,22 @@ switch(meeting)
   break;
 
 }
+Console.WriteLine("it's down to a randomizer if you win type a number between 1-100");
+
+  int value = Convert.ToInt32(Console.ReadLine());
+  Random rnd = new Random();
+  int number = rnd.Next(1, 100);
+  if (number == value)
+  {
+    Console.WriteLine("you won");
+  }
+  else
+  {
+    Console.WriteLine("you lost");
+    Console.WriteLine("the number was " + number);
+    Thread.Sleep(4000);
+    Environment.Exit(0);
+  }
+
 
 string answer = Console.ReadLine();
