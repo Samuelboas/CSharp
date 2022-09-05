@@ -111,20 +111,152 @@ switch(meeting)
 }
 Console.WriteLine("it's down to a randomizer if you win type a number between 1-100");
 
+while(true)
+{
+
+
+
   int value = Convert.ToInt32(Console.ReadLine());
   Random rnd = new Random();
   int number = rnd.Next(1, 100);
   if (number == value)
   {
     Console.WriteLine("you won");
+    break;
   }
   else
   {
-    Console.WriteLine("you lost");
+    Console.WriteLine("wrong number");
     Console.WriteLine("the number was " + number);
-    Thread.Sleep(4000);
-    Environment.Exit(0);
+
   }
 
+}
+
+Console.WriteLine("nice job");
+Thread.Sleep(5000);
+Console.WriteLine("since you beat among us is there any thing else you want to do?");
+Console.WriteLine("you can go to  prison for free. Do you want to go to prison?");
+string GoToPrison = Console.ReadLine();
+
+while(true)
+{
+  if(GoToPrison == "yes") 
+  {
+  Console.WriteLine("then welcome to you're new home you will be here for the next 16 years");
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Thread.Sleep(504576000);
+  Console.WriteLine("now you are a free man");
+  break;
+  }
+  else if (GoToPrison == "no")
+  {
+  Console.WriteLine("then you are not getting to have a lot of fun");
+  break;
+  }
+  else
+  {
+  Console.WriteLine("you did not say yes or no now i am sad");
+  break;   
+  }
+}
 
 string answer = Console.ReadLine();
