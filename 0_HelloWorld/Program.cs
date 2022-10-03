@@ -118,7 +118,7 @@ while(true)
 
   int value = Convert.ToInt32(Console.ReadLine());
   Random rnd = new Random();
-  int number = rnd.Next(1, 100);
+  int number = rnd.Next(1, 101);
   if (number == value)
   {
     Console.WriteLine("you won");
